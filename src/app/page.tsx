@@ -1,6 +1,15 @@
+import Slider from "@/components/Slider"
+import { url } from "inspector"
+import { title } from "process"
+
+
+
+
 const HomePage = () => {
   return (
-    <div className=''>HomePage</div>
+    <div className=''>
+      <Slider/>
+    </div>
   )
 }
 

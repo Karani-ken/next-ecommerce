@@ -7,19 +7,19 @@ const ListPage = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative">
         {/**CAMPAIN */}
-        <div className="hidden bg-pink-50 px-4 sm:flex justify-between h-64">
+        <div className="hidden bg-emerald-300 px-4 py-3 sm:flex justify-between h-64">
               <div className="w-2/3 flex flex-col items-center justify-center gap-8">
-                  <h1 className="text-4xl font-semibold leading-[48px] text-gray-700">Grad up to 50% off on <br /> Selected Products</h1>
-                  <button className="rounded-3xl bg-rose-400 text-white w-max py-3 px-5 text-sm">Buy Now</button>
+                  <h1 className="text-4xl font-semibold leading-[48px] text-gray-700">Grad amazing products on <br /> The NNP Shop</h1>
+                  <button className="rounded-3xl bg-yellow-400 text-white w-max py-3 px-5 text-sm">shop Now</button>
               </div>
               <div className="relative w-1/3">
-                  <Image src="/woman.png" alt="" fill className="object-contain"/>
+                  <Image src="/nyeripoly.png" alt="" fill className="object-contain rounded-full"/>
               </div>
         </div>
         {/**Filter */}
-        <Filter />
+        {/**<Filter /> */}
         {/**Products */}
-        <h1 className="text-xl font-semibold">Shoes for you</h1>
+        <h1 className="text-xl font-semibold">Products</h1>
         <ProductList />
     </div>
   )

@@ -6,17 +6,16 @@ import Link from "next/link"
 const PRODUCT_PER_PAGE = 20;
 
 const ProductList = async ({
-  categoryId,
   limit
 }: {
-  categoryId: string;
+  //categoryId: string;
   limit?: number
 }) => {
 
   const wixClient = await wixClientServer();
   const res = await wixClient.products
     .queryProducts()
-    .eq("collectionIds", "9c8c6dd2-009f-7bc8-d718-9e65b5ac91fc")
+    .eq("collectionIds", "123868db-0745-5e66-0ee2-be9d96d237e3")
     .limit(limit || PRODUCT_PER_PAGE)
     .find();
   return (
@@ -49,7 +48,7 @@ const ProductList = async ({
               <div className="text-sm text-gray-500">{product.additionalInfoSections.find((section: any) => section.title === "shortDesc")?.description || ""}</div>
             )}
 
-            <button className=" py-3 px-4 rounded-2xl w-max ring-1 ring-rose-400 text-rose-500  text-xs hover:bg-rose-400 hover:text-white">Add to cart</button>
+            <button className=" py-3 px-4 rounded-2xl w-max ring-1 ring-emerald-400 text-emerald-500  text-xs hover:bg-emerald-400 hover:text-white">Order Now</button>
 
           </Link>
 

@@ -10,7 +10,7 @@ const Footer = () => {
         {/**LEFT */}
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <Link href='/'>
-            <div className="text-2xl tracking-wide">LAMA</div>
+            <div className="text-2xl tracking-wide">The NNP Shop</div>
           </Link>
           <p>24 Kimathi Way, Nairobi, Kenya</p>
           <span className="font-semibold">hello@karani.dev</span>
@@ -67,21 +67,21 @@ const Footer = () => {
               type="text"
               placeholder="Email address"
               className="p-4 w-3/4" />
-            <button className="w-1/4 bg-rose-400 text-white">JOIN</button>
+            <button className="w-1/4 bg-emerald-400 text-white">JOIN</button>
           </div>
-          <span className="font-semibold">Secure Payments</span>
-          <div className="flex justify-between">
+         {/** <span className="font-semibold">Secure Payments</span>*/} 
+          {/*<div className="flex justify-between">
             <Image src='/discover.png' alt='' width={40} height={20} />
             <Image src='/paypal.png' alt='' width={40} height={20} />
             <Image src='/visa.png' alt='' width={40} height={20} />
             <Image src='/mastercard.png' alt='' width={40} height={20} />
             <Image src='/skrill.png' alt='' width={40} height={20} />
-          </div>
+          </div>*/}
         </div>
       </div>
       {/**BOTTOM */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
-          <div>&copy; 2025 LAMA Shop</div>
+          <div>&copy; 2025 The NNP Shop</div>
           <div className="flex flex-col md:flex-row gap-8">
             <div>
               <span className="text-gray-500 mr-4">Language</span>

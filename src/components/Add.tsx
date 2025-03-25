@@ -22,7 +22,7 @@ const Add = () => {
           </div>
         </div>
         <button className="w-36 text-sm rounded-3xl ring-1 ring-rose-400 py-2 px-4 hover:bg-rose-400 hover:text-white disabled:cursor-not-allowed disabled:bg-pink-200 disabled:text-white  disabled:ring-none" >
-          Add to Cart</button>
+          Order Now</button>
       </div>
 
 

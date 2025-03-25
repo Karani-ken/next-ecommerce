@@ -5,39 +5,39 @@ import { useEffect, useState } from "react";
 const slides = [
     {
         id: 1,
-        title: "Summer Sale Collection",
-        description: "Get up to 50% off on all products",
-        img: "https://images.pexels.com/photos/15960624/pexels-photo-15960624/free-photo-of-young-brunette-in-a-matching-set-of-summer-clothing.jpeg?auto=compress&cs=tinysrgb&w=600",
+        title: "The NNP Kitchen",
+        description: "Order Mouth watering Products from our Kitchen",
+        img: "/hos.jpg",
         url: "/",
-        bg: "bg-gradient-to-r from-yellow-50 to-pink-50"
+        bg: "bg-gradient-to-r from-emerald-400 to-yellow-50"
     },
     {
         id: 2,
-        title: "Winter Sale Collection",
-        description: "Get up to 50% off on all products",
+        title: "Fashion Sale",
+        description: "Orde custom designs from our fashion and design students",
         img: "https://images.pexels.com/photos/12324552/pexels-photo-12324552.jpeg?auto=compress&cs=tinysrgb&w=600",
         url: "/",
-        bg: "bg-gradient-to-r from-pink-50 to-blue-50"
+        bg: "bg-gradient-to-r from-emerald-400 to-black-50"
     },
     {
         id: 3,
-        title: "Spring Sale Collection",
-        description: "Get up to 50% off on all products",
-        img: "https://images.pexels.com/photos/21610109/pexels-photo-21610109/free-photo-of-brunette-woman-in-dress.jpeg?auto=compress&cs=tinysrgb&w=600",
+        title: "Dairy Products",
+        description: "The Best dairy products from our dairy plant",
+        img: "/Yoghurt-S.jpeg",
         url: "/",
-        bg: "bg-gradient-to-r from-blue-50 to-yellow-50"
+        bg: "bg-gradient-to-r from-emerald-400 to-yellow-50"
     }
 ]
 const Slider = () => {
 
     const [current, setCurrent] = useState(0);
-    /*useEffect(() => {
+    useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
         },3000);
 
         return () => clearInterval(interval);
-    },[]);*/
+    },[]);
     return (
         <div className="h-[calc(100vh-80px)] overflow-hidden">
             <div className="w-max h-full flex transition-all ease-in-out duration-1000" 
@@ -47,9 +47,9 @@ const Slider = () => {
                         {/**TEXT CONTAINER */}
                         <div className="h-1/2 xl:w-1/2 xl:h-full flex flex-col ic justify-center gap-8 2xl:gap-12 text-center">
                             <h2 className="text-xl lg:text-3xl 2xl:text-5xl">{slide.description}</h2>
-                            <h1 className="text-5xl lg:text-6xl 2xl:text-8xl font-semibold">{slide.title}</h1>
+                            <h1 className="text-5xl lg:text-6xl text-white 2xl:text-8xl font-semibold">{slide.title}</h1>
                             <Link href={slide.url}>
-                                <button className="rounded-md bg-black text-white py-3 px-4">Shop now</button>
+                                <button className="rounded-md bg-green-600 text-white py-3 px-4">Shop now</button>
                             </Link>
                         </div>
                         {/**Image Container */}
@@ -62,11 +62,11 @@ const Slider = () => {
             <div className="absolute m-auto left-1/2 bottom-8 flex gap-4">
                 {
                     slides.map((slide, index) => (
-                        <div className={`w-3 h-3 rounded-full ring-1 ring-gray-600 cursor-pointer flex items-center justify-center ${current === index ? "scale-150" : ""}`
+                        <div className={`w-3 h-3 rounded-full ring-1 ring-yellow-300 cursor-pointer flex items-center justify-center ${current === index ? "scale-150" : ""}`
                         } key={slide.id}
                         onClick={() => setCurrent(index)}
                         >
-                            {current === index && (<div className="w-[6px] h-[6px] bg-gray-600 rounded-full"></div>)}
+                            {current === index && (<div className="w-[6px] h-[6px] bg-yellow-400 rounded-full"></div>)}
                         </div>
                     ))
                 }
